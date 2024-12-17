@@ -330,3 +330,16 @@ body {
     /* -------- */;
     animation: 5s flicker linear infinite;
 }
+@keyframes flicker {
+    0% { opacity: 1;}
+    10% { opacity: 1;}
+    11% { opacity: 0.8;}
+    12% { opacity: 1;}
+    65% { opacity: 1;}
+    66% { opacity: 0.7;}
+    67% { opacity: 0.9;}
+    68% { opacity: 1;}
+    69% { opacity: 0.4;}
+    70% { opacity: 1;}
+    100% { top: 1;}
+}
