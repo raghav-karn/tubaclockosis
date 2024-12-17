@@ -32,3 +32,16 @@ body {
     --m2:#e46703;
     --m3:#ac2a04;
 }
+
+#noise-svg {
+    height: 100%;
+    width: 100%;
+    opacity: 0.12;
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+}
+#noise-rect {
+    width: 100vw;
+    height: 100vh;
+}
