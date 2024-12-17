@@ -343,3 +343,19 @@ body {
     70% { opacity: 1;}
     100% { top: 1;}
 }
+.pipe-accents .left,
+.pipe-accents .right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.pipe-accents .left div,
+.pipe-accents .right div{
+    --_pipe-pos-x: -3%;
+    position: absolute;
+    margin: auto;
+    width: 14%;
+    height: 2.4%;
+    border-radius: 0.7em;
+    background: #040909;
+}
