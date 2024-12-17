@@ -783,3 +783,52 @@ body {
     0em 0em var(--_o1-size) var(--_o1),
     0em 0em var(--_o1-size) var(--_o1);
 }
+
+.glass-tube {
+    position: absolute;
+    width: 26em;
+    height: 70em;
+    translate: 0 -7em;
+    border-radius: 1000px;
+    box-shadow: 
+    /* light on */
+    0em 0em 1em -0.2em var(--m1),
+    0em 0em 2em -0.4em var(--m2),
+    0em 0em 3em -0.4em var(--m2),
+    inset 0em 0em 0.4em 0.2em var(--m3),
+    inset 0em 0em 0.6em 0.4em var(--m2),
+    inset 0em 0em 1em 0.7em var(--m1),
+    inset 0em 0em 3em 0em var(--m2),
+    inset 0em 0em 5em 1em var(--m3),
+    /* -------- */
+    inset -0.1em 0.1em 0.1em 0em var(--mw1),
+    inset 0 0 1em 0.1em var(--mw1);
+}
+.glass-tube::before {
+    content: "";
+    display: block;
+    width: 6%;
+    height: 60%;
+    box-shadow: 
+    inset 1.5em 0em 1em -1em var(--mw1);
+    position: absolute;
+    left: 4%;
+    top: 16%;
+    filter: blur(0.6px);
+    opacity: 0.8;
+    border-radius: 50% 1% / 50% 100%;
+}
+.glass-tube::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 60%;
+    box-shadow: 
+    inset -1em 0.5em 1em -1em var(--mw1);
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    filter: blur(0.6px);
+    opacity: 1;
+    border-radius: 0% 100% / 10% 30%;
+}
