@@ -58,3 +58,54 @@ body {
     --_factor: min(600px, 80vh);
     --_size: min(var(--_factor), 80vw);
 }
+
+.shadow {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    height: 0em;
+    translate: 0 45em;
+    box-shadow: 
+    0 0 3em 2em #040909,
+    0 0 8em 3em var(--_o3),
+    0 0 10em 4em var(--_o2),
+    0 0 10em 5em var(--_o1);
+    opacity: 0.6;
+}
+.shadow::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 20em;
+    width: 0;
+    box-shadow: 
+    0 0 8em 4em var(--_y1),
+    0 0 8em 6em var(--_y2),
+    0 0 8em 8em var(--_o1),
+    0 0 8em 10em var(--_o2),
+    0 0 8em 12em var(--_o3);
+}
+.shadow::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    height: 10em;
+    width: 10em;
+    border: 2px solid red;
+    transform: rotateX(70deg);
+    box-shadow: 
+    0 0em 12em 40em var(--_o1),
+    0 0em 12em 60em var(--_o2),
+    0 0em 12em 80em var(--_o3);
+}
