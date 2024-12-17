@@ -25,6 +25,7 @@ function updateTimeAndDate() {
     for (let i = 0; i < 12; i++) {
         document.getElementById('char' + i + '1').textContent = displayStr[i];
         document.getElementById('char' + i + '2').textContent = displayStr[i];
-    }
-        
+    }        
 }  
+updateTimeAndDate();
+setInterval(updateTimeAndDate, 60000);
