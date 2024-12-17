@@ -728,3 +728,58 @@ body {
     inset 1em 0.3em 10em 10em var(--m1)
     /* -------- */;
 }
+
+.display {
+    color: var(--_bloom);
+    font-size: 14em;
+    line-height: 0.8em;
+    translate: 0 -0.4em;
+}
+.display .row {
+    display: flex;
+}
+.display .small-row {
+    font-size: 0.3em;
+    position: absolute;
+    right: -22%;
+    top: 10%;
+}
+.display .small-row .row {
+    flex-direction: column;
+    line-height: 1.02em;
+}
+.display .row .col {
+    display: flex;
+    position: relative;
+}
+.display .row .col > div:nth-child(1){
+    opacity: 0.2;
+}
+.display .row .col > div:nth-child(2){
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+.display .row .col > div:nth-child(3){
+    position: absolute;
+    right: 0;
+    color: var(--_bloom);
+    --_o1-size: 0.1em;
+    --_o2-size: 0.4em;
+    --_o3-size: 0.6em;
+    text-shadow: 
+    0em 0em 0.04em var(--_bloom),
+    0em 0em 0.04em var(--_bloom),
+    0em 0em var(--_o3-size) var(--_o3),
+    0em 0em var(--_o3-size) var(--_o3),
+    0em 0em var(--_o3-size) var(--_o3),
+    0em 0em var(--_o3-size) var(--_o3),
+    0em 0em var(--_o2-size) var(--_o2),
+    0em 0em var(--_o2-size) var(--_o2),
+    0em 0em var(--_o2-size) var(--_o2),
+    0em 0em var(--_o2-size) var(--_o2),
+    0em 0em var(--_o1-size) var(--_o1),
+    0em 0em var(--_o1-size) var(--_o1),
+    0em 0em var(--_o1-size) var(--_o1),
+    0em 0em var(--_o1-size) var(--_o1);
+}
