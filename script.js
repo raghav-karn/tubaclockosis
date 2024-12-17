@@ -12,5 +12,14 @@ function updateTimeAndDate() {
     if (timeStr.startsWith('0')) {
         timeStr = ' ' + timeStr.slice(1);
     }
-    
+    let month = (now.getMonth() + 1).toString().padStart(2, '0');
+    let day = now.getDate().toString().padStart(2, '0');
+    const year = now.getFullYear().toString().slice(-2);
+    if (month.startsWith('0')) {
+        month = ' ' + month.slice(1);
+    }
+    if (day.startsWith('0')) {
+        day = ' ' + day.slice(1);
+    }
+      
 }  
