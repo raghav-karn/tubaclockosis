@@ -605,3 +605,44 @@ body {
     inset -2em 0em 2em -1em var(--m1)
     /* -------- */;
 }
+.pipe-accents .bottom-right {
+    position: absolute;
+    bottom: 12%;
+    right: -6%;
+    width: 20%;
+    height: 2.4%;
+    background: #040909;
+    border-radius: 40%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 
+    inset -0.4em -0.1em 1em -0.4em var(--mw1),    
+    /* light on */
+    inset 2em 0em 1.8em -1.5em var(--m3),
+    inset 2em 0em 1.9em -1.3em var(--m2),
+    inset 2em 0em 2em -1em var(--m1)
+    /* -------- */;
+}
+.pipe-accents .bottom-right::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -24%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #040909;
+    width: 90%;
+    height: 70%;
+    border-radius: 50%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    box-shadow: 
+    inset -0.4em 0em 1em -0.3em var(--mw1),    
+    /* light on */
+    inset 2em 0em 1.8em -1.5em var(--m3),
+    inset 2em 0em 1.9em -1.3em var(--m2),
+    inset 2em 0em 2em -1em var(--m1)
+    /* -------- */;
+}
+
