@@ -996,3 +996,27 @@ body {
     inset 0em 0.1em 1em -0em var(--m3)
     /* -------- */;
 }
+.wires {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.wires div:nth-child(1),
+.wires div:nth-child(2) {
+    width: 18%;
+    height: 18%;
+    rotate: 25deg;
+    translate: 14em -5em;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 
+    inset 0em 0.1em 0.4em 0em var(--mw1),
+    inset 0 0 0 0.5em #040909;
+    border-radius: 0% 100% / 50% 100%;
+}
+.wires div:nth-child(2) {
+    translate: 15em -8em;
+    rotate: 122deg;
+    scale: 0.7;
+}
+
