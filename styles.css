@@ -151,3 +151,15 @@ body {
     /* --------- */
     0em 0em 0em 20em #040909;
 }
+.pipe-accents {  
+    width: calc(var(--_size) * (8/15));
+    height: var(--_size);
+    position: absolute;
+}
+.pipe-accents .top-tube,
+.pipe-accents .top,
+.pipe-accents .topinset,
+.pipe-accents .left,
+.pipe-accents .right {  
+    z-index: 3;
+}
