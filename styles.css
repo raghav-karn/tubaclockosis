@@ -1088,3 +1088,30 @@ body {
     bottom: 40%;
     border-radius:  100% 30% / 100% 0;
 }
+
+/* --------------- */
+/* -- CLOCK OFF -- */
+/* --------------- */
+*, *:before, *:after {
+    transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    user-select: none;
+}
+
+.clock.off .hex{
+    opacity: 0.3;
+    filter: grayscale(1);
+}
+.clock.off .hex .overlay {
+    display: none;
+}
+.clock.off .pipe-accents .top-tube,
+.clock.off .pipe-accents .top,
+.clock.off .pipe-accents .topinset {
+    box-shadow: 
+    inset -0.2em 1.1em 1.4em -0.4em var(--mw1),
+    /* light off */
+    inset 0em -1.2em 0.5em -1.1em rgba(0, 0, 0, 0),
+    inset 0em -1.2em 1em -0.8em rgba(0, 0, 0, 0),
+    inset 0em -1.2em 1em -0.2em rgba(0, 0, 0, 0)
+    /* -------- */;
+}
