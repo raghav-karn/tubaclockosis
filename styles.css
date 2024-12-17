@@ -945,3 +945,54 @@ body {
     inset 0em 0.1em 1em -0em var(--m3)
     /* -------- */;
 }
+.rods{
+    width: 50%;
+    height: 28%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 14%;
+    --_clip-btm: 80%;
+    clip-path: polygon(0 0, 100% 0, 100% var(--_clip-btm), 0 var(--_clip-btm));
+}
+.rods .left-rod {
+    width: 60%;
+    height: 12%;
+    rotate: 60deg;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    background: #040909;
+}
+.rods .center-rod {
+    width: 30%;
+    height: 12%;
+    rotate: 90deg;
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #040909;
+}
+.rods .right-rod {
+    width: 60%;
+    height: 12%;
+    rotate: -60deg;
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    background: #040909;
+}
+.rods .left-rod,
+.rods .center-rod,
+.rods .right-rod {
+    box-shadow: 
+    inset 0em 0.1em 0.8em -0.2em var(--mw1),
+    /* light on */
+    inset 0em 0.1em 1em -0.7em var(--m1),
+    inset 0em 0.1em 1em -0.3em var(--m2),
+    inset 0em 0.1em 1em -0em var(--m3)
+    /* -------- */;
+}
