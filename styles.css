@@ -359,3 +359,106 @@ body {
     border-radius: 0.7em;
     background: #040909;
 }
+.pipe-accents .left div:nth-child(1){
+    top: 16%;
+    left: var(--_pipe-pos-x);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 
+    inset -0.1em 0.4em 0.6em -0.2em var(--mw1),
+    /* light on */
+    inset -1em -0.5em 0.8em -0.8em var(--m3),
+    inset -1em -0.5em 0.9em -0.5em var(--m2),
+    inset -1em -0.5em 1em -0.3em var(--m1);
+    /* -------- */
+}
+.pipe-accents .left div:nth-child(1)::before {
+    content: '';
+    display: block;
+    width: 98%;
+    height: 1em;
+    background: #040909;
+    position: absolute;
+    left: 78%;
+    top: 40%;
+    rotate: 5deg;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    box-shadow: 
+    inset 0em 0.3em 0.6em -0.4em var(--mw1),
+    /* light on */
+    inset 1em -0.5em 0.3em -0.5em var(--m3),
+    inset 1em -0.5em 0.4em -0.3em var(--m2),
+    inset 1em -0.5em 0.6em -0.2em var(--m1)
+    /* -------- */;
+}
+.pipe-accents .left div:nth-child(2){
+    top: 26%;
+    left: var(--_pipe-pos-x);
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    box-shadow: 
+    inset -0.1em 0.4em 0.6em -0.2em var(--mw1),
+    /* light on */
+    inset -1em 0em 0.8em -0.6em var(--m3),
+    inset -1em 0em 0.9em 0em var(--m2),
+    inset -1em 0em 1em 0.1em var(--m1);
+    /* -------- */
+}
+.pipe-accents .left div:nth-child(2)::before {
+    content: '';
+    display: block;
+    width: 98%;
+    height: 1em;
+    background: #040909;
+    position: absolute;
+    left: 78%;
+    top: 0%;
+    rotate: 2deg;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    box-shadow: 
+    inset 0em 0.3em 0.6em -0.4em var(--mw1),
+    /* light on */
+    inset 1em -0.1em 0.3em 0em var(--m3),
+    inset 1em -0.1em 0.4em 0.2em var(--m2),
+    inset 1em -0.1em 0.6em -0.3em var(--m1)
+    /* -------- */;
+}
+.pipe-accents .left div:nth-child(3){
+    top: 64%;
+    left: var(--_pipe-pos-x);
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    box-shadow: 
+    inset -0.1em 0.4em 0.6em -0.2em var(--mw1),
+    /* light on */
+    inset -1em 0.3em 0.8em -0.5em var(--m3),
+    inset -1em 0.3em 0.9em -0.3em var(--m2),
+    inset -1em 0.3em 1em 0em var(--m1);
+    /* -------- */
+}
+.pipe-accents .left div:nth-child(3)::before {
+    content: '';
+    display: block;
+    width: 98%;
+    height: 1em;
+    background: #040909;
+    position: absolute;
+    left: 78%;
+    top: 20%;
+    rotate: -4deg;
+    margin: auto;
+    z-index: -1;
+    box-shadow: 
+    inset 0em 0.3em 0.6em -0.4em var(--mw1),
+    /* light on */
+    inset 1em 0.2em 0.3em -0.1em var(--m3),
+    inset 1em 0.2em 0.4em 0em var(--m2),
+    inset 1em 0.2em 0.6em 0.1em var(--m1)
+    /* -------- */;
+}
