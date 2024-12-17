@@ -1115,3 +1115,68 @@ body {
     inset 0em -1.2em 1em -0.2em rgba(0, 0, 0, 0)
     /* -------- */;
 }
+.clock.off .pipe-accents .topinset::before {
+    box-shadow: 
+    inset 0 0 0em 0.1em #040909,
+    /* light off */
+    -0.1em 0.2em 0.7em 0.1em rgba(255,255,255, 0.4),
+    inset 0 0 1.3em 0.2em rgba(0, 0, 0, 0),
+    inset 0 0 1.3em 0.4em rgba(0, 0, 0, 0),
+    inset 0 0 1.3em 0.6em rgba(0, 0, 0, 0),
+    inset 0 0 1.3em 2em rgba(0, 0, 0, 0)
+    /* -------- */;
+    animation-play-state: paused;
+}
+.clock.off .pipe-accents .tube-holders div{
+    box-shadow: 
+    inset 0 0 0.1em 0.1em #ffffff5d,
+    /* light off */
+    inset 0em -1.2em 0.5em -1.1em rgba(0, 0, 0, 0),
+    inset 0em -1.2em 1em -0.8em rgba(0, 0, 0, 0),
+    inset 0em -1.2em 1em -0.2em rgba(0, 0, 0, 0)
+    /* -------- */;
+}
+.clock.off .inner-pipe {
+    box-shadow: 
+    0em 104em 16em 20em #040909,
+    /* light off */
+    0em 1.2em 1em 0.2em rgba(0, 0, 0, 0),
+    0em 1.2em 1em 0.5em rgba(0, 0, 0, 0),
+    0em 1.2em 0.5em 1.2em rgba(0, 0, 0, 0),
+    0em 1.2em 1.2em 1.5em rgba(0, 0, 0, 0),
+    0em 1.2em 2em 2em rgba(0, 0, 0, 0),
+    /* ---- */
+    0em 90em 16em 20em #040909,
+    /* nat light */
+    -1em 1em 2em 3.7em #040909,
+    0.5em 0em 2em 3.7em #040909,
+    0em 0em 0em 4.6em var(--mw1),
+    0em 0em 0.5em 5em var(--mw1),
+    /* --------- */
+    0em 0em 0em 20em #040909;
+}
+.clock.off .small-inner-pipe {
+    width: 100%;
+    height: 100%;
+    scale: 0.92 0.98;
+    border-radius: 35% / 10%;
+    box-shadow: 
+    0em -94em 20em 20em #040909,
+    0em 104em 20em 20em #040909,
+    /* light off */
+    0em 1em 1em 0.2em rgba(0, 0, 0, 0),
+    0em 1em 1em 0.5em rgba(0, 0, 0, 0),
+    0em 1em 0.5em 1.2em rgba(0, 0, 0, 0),
+    0em 1em 1.2em 1.5em rgba(0, 0, 0, 0),
+    0em 1em 2em 2em rgba(0, 0, 0, 0),
+    /* ---- */
+    /* nat light */
+    -0.2em 0.5em 0.8em -0.2em var(--mw1),
+    0em 90em 16em 20em #040909,
+    -1em 1em 2em 2em #040909,
+    0.5em 0em 2em 2em #040909,
+    0em 0em 0em 4.6em var(--mw1),
+    0em 0em 1.5em 5em var(--mw1),
+    /* --------- */
+    0em 0em 0em 20em #040909;
+}
