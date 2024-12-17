@@ -1180,3 +1180,21 @@ body {
     /* --------- */
     0em 0em 0em 20em #040909;
 }
+.clock.off .pipe-accents .bottom-left {
+    box-shadow: 
+    inset -0.4em -0.1em 1em -0.4em var(--mw1),
+    /* light off */
+    inset -3em 0em 1.8em -1.5em rgba(0, 0, 0, 0),
+    inset -3em 0em 1.9em -1.3em rgba(0, 0, 0, 0),
+    inset -3em 0em 2em -1em rgba(0, 0, 0, 0)
+    /* -------- */;
+}
+.clock.off .pipe-accents .bottom-left::before {
+    box-shadow: 
+    inset -0.4em 0em 1em -0.3em var(--mw1),
+    /* light off */
+    inset -3em 0em 1.8em -1.5em rgba(0, 0, 0, 0),
+    inset -3em 0em 1.9em -1.3em rgba(0, 0, 0, 0),
+    inset -3em 0em 2em -1em rgba(0, 0, 0, 0)
+    /* -------- */;
+}
