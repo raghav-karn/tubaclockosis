@@ -864,3 +864,7 @@ body {
     rotate: 40deg;
     animation: 5s electric ease-in infinite;
 }
+@keyframes electric {
+    0% { top: 700%;}
+    100% { top: -20%;}
+}
