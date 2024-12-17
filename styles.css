@@ -832,3 +832,35 @@ body {
     opacity: 1;
     border-radius: 0% 100% / 10% 30%;
 }
+
+.hex {
+    position: absolute;
+    width: 17.7em;
+    height: 70em;
+    translate: 0 -7em;
+    border-radius: 1000px;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.7;
+    --_hex-cl1: #040909;
+    --_hex-cl2: var(--_o1);
+    --_hex-size: 2.18em;
+    background:
+    radial-gradient(circle farthest-side at 0% 50%, var(--_hex-cl1) 23.5%,rgba(240,166,17,0) 0) calc(1.06*var(--_hex-size)) calc(1.5*var(--_hex-size)),
+    radial-gradient(circle farthest-side at 0% 50%, var(--_hex-cl2) 24%,rgba(240,166,17,0) 0) calc(0.94*var(--_hex-size)) calc(1.5*var(--_hex-size)),
+    linear-gradient( var(--_hex-cl1) 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%, var(--_hex-cl1) 0)0 0,
+    linear-gradient(150deg, var(--_hex-cl1) 24%, var(--_hex-cl2) 0, var(--_hex-cl2) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%, var(--_hex-cl2) 0, var(--_hex-cl2) 76%, var(--_hex-cl1) 0)0 0,
+    linear-gradient(30deg, var(--_hex-cl1) 24%, var(--_hex-cl2) 0, var(--_hex-cl2) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%, var(--_hex-cl2) 0, var(--_hex-cl2) 76%, var(--_hex-cl1) 0)0 0,
+    linear-gradient(90deg, var(--_hex-cl2) 2%, var(--_hex-cl1) 0, var(--_hex-cl1) 98%, var(--_hex-cl2) 0%)0 0  var(--_hex-cl1);
+    background-size:calc(2*var(--_hex-size)) calc(3*var(--_hex-size));
+}
+.hex .overlay {
+    position: absolute;
+    background: #fff;
+    mix-blend-mode: overlay;
+    width: 200%;
+    left: -40%;
+    height: 12%;
+    rotate: 40deg;
+    animation: 5s electric ease-in infinite;
+}
