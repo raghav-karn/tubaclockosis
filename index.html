@@ -5,10 +5,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tubacolosis — By Raghav Karn</title>
+    <title>Tubaclockosis — By Raghav Karn</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    
+    <div class="intro">
+      <h1 class="logo-header">
+          <span class="logo">Tubaclockosis</span><span class="logo">By Raghav Karn</span>
+          <span class="text">Press the white button at the buttom to switch the clock on and off.</span>
+      </h1>
+    </div>
+
     <svg id="noise-svg">
         <!-- gives background a bit of texture -->
         <filter id='noiseFilter'>
@@ -16,6 +24,7 @@
         </filter>
         <rect id="noise-rect" filter='url(#noiseFilter)' />
     </svg>
+
 
     <!-- containers -->
     <div class="clock off">
