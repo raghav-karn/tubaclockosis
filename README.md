@@ -1,5 +1,4 @@
 # `Tubaclockosis` ⏰
-
 Welcome to the **Tubaclockosis**: *Watch out!* 
 A [High Seas](https://highseas.hackclub.com/).
 
@@ -9,7 +8,7 @@ A [High Seas](https://highseas.hackclub.com/).
 
 ## Preview 📸
 
-![Tubaclockosis](preview.png)
+![Tubaclockosis](src/images/preview.png)
 
 ## Credits 🤝
 

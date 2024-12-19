@@ -17,7 +17,9 @@
     
     <div class="intro">
       <h1 class="logo-header">
-          <span class="logo">Tubaclockosis — By Raghav Karn</span><br><span class="logo" style="font-family: monospace; font-size: 1rem;"> Press the white button at the buttom to switch the clock on and off.</span>
+          <span class="logo"><a href="https://github.com/raghav-karn/tubaclockosis" target="_blank" style="text-decoration:none; color: #ba96ec;">Tubaclockosis</a> — By <a href="https://github.com/raghav-karn" target="_blank" style="text-decoration:none; color: #e8dafc;">Raghav Karn</a></span>
+          <br>
+          <span class="logo" style="font-family: monospace; font-size: 1rem; animation: none; border-right: none; color: #e0cbfd;"> Press the <span style="color: #e0c5ff;"><i>white button</i></span> at the buttom to switch the clock on and off. </span>
       </h1>
     </div>
 
@@ -113,11 +115,18 @@
         <div></div>
         <div></div>
       </div>
-      <div class="button" onclick="body.querySelector('.clock').classList.toggle('off')">
-        <div></div>
-      </div> 
-    </div>
 
+      <!-- button -->
+      <audio id="myAudio1" preload="auto">
+        <source src="src/audio/noise1.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="myAudio2" preload="auto" loop>
+        <source src="src/audio/noise2.mp3" type="audio/mpeg">
+      </audio>
+      <div class="button" onclick="body.querySelector('.clock').classList.toggle('off'), togglePlay()">
+        <div>    
+        </div>
+      </div>
       <script src="script.js"></script>
   </body>
 </html>  

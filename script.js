@@ -64,3 +64,67 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
 updateTimeAndDate();
 setInterval(updateTimeAndDate, 60000);
+
+var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+var buffer1, buffer2;
+var source1, source2;
+var isPlaying = false;
+
+// Load audio files
+function loadAudio(url, callback) {
+    var request = new XMLHttpRequest();
+    request.open('GET', url, true);
+    request.responseType = 'arraybuffer';
+    request.onload = function() {
+        audioContext.decodeAudioData(request.response, function(buffer) {
+            callback(buffer);
+        });
+    };
+    request.send();
+}
+
+loadAudio('src/audio/noise1.mp3', function(buffer) {
+    buffer1 = buffer;
+});
+
+loadAudio('src/audio/noise2.mp3', function(buffer) {
+    buffer2 = buffer;
+});
+
+function playBuffer(buffer) {
+    var source = audioContext.createBufferSource();
+    source.buffer = buffer;
+    source.connect(audioContext.destination);
+    return source;
+}
+
+function togglePlay() {
+    if (isPlaying) {
+        if (source1) {
+            source1.stop();
+            source1.disconnect();
+            source1 = null;
+        }
+        if (source2) {
+            source2.stop();
+            source2.disconnect();
+            source2 = null;
+        }
+        isPlaying = false;
+    } else {
+        source1 = playBuffer(buffer1);
+        source1.start(0);
+        source1.onended = function() {
+            if (isPlaying) { // Check if still playing before starting source2
+                source2 = playBuffer(buffer2);
+                source2.loop = true;
+                source2.start(0);
+            }
+        };
+        isPlaying = true;
+    }
+}
+
+// Existing code
+updateTimeAndDate();
+setInterval(updateTimeAndDate, 60000);
