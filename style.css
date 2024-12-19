@@ -77,21 +77,42 @@ body {
     transition: ease-in-out 1.5s;
 }
 
-@media (max-width: 600px) {
-    .logo {
-        font-size: 1.5rem; 
-        white-space: normal;
-        border-right: none; 
-        animation: none; 
-    }
-}
-
 @media (max-width: 1000px) {
     .logo {
         font-size: 2.5rem; 
         white-space: normal; 
         border-right: none;
         animation: none; 
+    }
+
+    .logo-header {
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.3rem;
+        white-space: normal;
+        border-right: none; 
+        animation: none; 
+    }
+
+    .logo-header {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .logo {
+        font-size: 1rem;
+        white-space: normal;
+        border-right: none; 
+        animation: none; 
+    }
+
+    .logo-header {
+        font-size: 1.2rem;
     }
 }
 
