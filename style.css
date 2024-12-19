@@ -60,21 +60,6 @@ body {
     display:inline-block;
     bottom: -20px;
     opacity: 0;
-}
-
-.logo.active{
-    bottom: 0;
-    opacity: 1;
-    transition: ease-in-out 1.5s;
-}
-
-.logo.fade{
-    bottom: 150px;
-    opacity: 0;
-    transition: ease-in-out 1.5s;
-}
-
-.logo {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(172, 80, 247); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -83,9 +68,40 @@ body {
     animation: 
       typing 2.5s steps(40, end),
       blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
+
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 1.5s;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.5rem; 
+        white-space: normal;
+        border-right: none; 
+        animation: none; 
+    }
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        font-size: 2.5rem; 
+        white-space: normal; 
+        border-right: none;
+        animation: none; 
+    }
+}
+
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 1.5s;
+}
+
+/* The typing effect */
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
