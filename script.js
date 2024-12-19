@@ -52,11 +52,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
                 }, (idx + 1) * 50)
             })
                 
-        },2000);
+        },4200);
 
         setTimeout(()=>{
             intro.style.top = '-100vh';
-        }, 2300)
+        }, 4500)
 
     })
 
